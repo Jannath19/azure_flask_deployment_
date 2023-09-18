@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <section>
+        <h2 class="text-xl mb-2"> Dataset preview using a TABLE in HTML</h2>
+        <table class="table-auto">
+            <thead>
+                <tr>
+                    <th class="px-4 py-2">ED Visits</th>
+                    <th class="px-4 py-2">ED Hospitalizations</th>
+                    <th class="px-4 py-2">Urgent Care Visits</th>
+                    <th class="px-4 py-2">Asthma Use</th>
+                    <th class="px-4 py-2">Total Members</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for data in data.values %}
+                <tr>
+                    <td class="border px-4 py-2">{{ data['ED_visits'] }}</td>
+                    <td class="border px-4 py-2">{{ data['ED_hosp'] }}</td>
+                    <td class="border px-4 py-2">{{ data['UC_visits'] }}</td>
+                    <td class="border px-4 py-2">{{ data['Asthma_use'] }}</td>
+                    <td class="border px-4 py-2">{{ data['Total_members'] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </section>
+{% endblock %}

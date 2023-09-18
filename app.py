@@ -8,7 +8,7 @@ def index():
     return render_template('base.html')
 
 @app.route('/about')
-def about():
+def aboutpage():
     return render_template('about.html')
 
 df = pd.read_csv('https://raw.githubusercontent.com/hantswilliams/HHA_504_2023/main/WK1/data/113243405_StonyBrookSouthamptonHospital_StandardCharges.csv')
