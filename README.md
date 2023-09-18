@@ -50,6 +50,9 @@ Flask application deployment guide
 
 Your Flask application is now live
 
+# URL For My Flask App
+jannath-504-flask.azurewebsites.net
+
 
 
 
